@@ -6,6 +6,7 @@ apt-get -y install curl wget git golang clang cmake ninja-build pkg-config libgt
 curl -fsSL https://code-server.dev/install.sh | sh
 #systemctl restart code-server@$USER
 systemctl enable --now code-server@$USER
+sleep 1m
 sed -i '/bind-addr:/c\bind-addr: 0.0.0.0:888' /root/.config/code-server/config.yaml
 sed -i '/password:/c\password: rui333435' /root/.config/code-server/config.yaml
 git clone https://github.com/flutter/flutter.git -b stable
