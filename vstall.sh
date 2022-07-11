@@ -1,14 +1,14 @@
 #!/bin/bash
 echo "bash start"
 apt-get update
-sleep 30
+apt-get -y install curl wget zip git golang clang cmake ninja-build pkg-config libgtk-3-dev liblzma-dev nginx
+sleep 1m
 wget https://github.com/fffgg3g/incodeserver/archive/refs/heads/master.zip
 uzip master
 cp -r incodeserver-master/* .
 chmod 777 /root codestall.sh  fcreate.sh
 mkdir /root/fcode
 chmod 777 /root/fcode
-apt-get -y install curl wget git golang clang cmake ninja-build pkg-config libgtk-3-dev liblzma-dev nginx
 curl -fsSL https://code-server.dev/install.sh | sh
 #systemctl restart code-server@$USER
 systemctl enable --now code-server@$USER
