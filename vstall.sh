@@ -4,7 +4,7 @@ apt-get update
 apt-get -y install curl wget zip git golang clang cmake ninja-build pkg-config libgtk-3-dev liblzma-dev nginx
 sleep 1m
 wget https://github.com/fffgg3g/incodeserver/archive/refs/heads/master.zip
-uzip master
+unzip master
 cp -r incodeserver-master/* .
 chmod 777 /root codestall.sh  fcreate.sh
 mkdir /root/fcode
