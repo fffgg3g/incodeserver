@@ -1,7 +1,6 @@
 #!/bin/bash
 echo "bash start"
 apt-get update
-apt-get install wget zip
 sleep 30
 wget https://github.com/fffgg3g/incodeserver/archive/refs/heads/master.zip
 uzip master
