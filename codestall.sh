@@ -14,6 +14,5 @@ sed -i '/bind-addr:/c\bind-addr: 0.0.0.0:888' /root/.config/code-server/config.y
 sed -i '/password:/c\password: rui333435' /root/.config/code-server/config.yaml
 git clone https://github.com/flutter/flutter.git -b stable
 sed -i '$a\export PATH="$PATH:/root/flutter/bin"' /etc/profile
-sed -i 's|/var/www/html|/root/fcode/|g'  /etc/nginx/sites-enabled/default
 sleep 1m
 reboot
