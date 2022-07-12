@@ -1,8 +1,6 @@
 #!/bin/bash
 echo 'create app'
 flutter precache
-mkdir /root/fcode
-chmod 777 fcode
 cd /root/fcode
 flutter create $1
 sleep 30
