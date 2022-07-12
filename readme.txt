@@ -22,3 +22,6 @@ wget https://github.com/fffgg3g/incodeserver/raw/master/vstall.sh&&chmod 777 vst
 
 新建一个项目
 ./fcreate.sh projectname
+
+安装android
+wget https://github.com/fffgg3g/incodeserver/raw/master/anstall.sh;chmod 777 anstall.sh;./anstall.sh
