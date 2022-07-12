@@ -26,4 +26,4 @@ screen;screen -S sc2
 
 安装android
 screen;screen -S sc3
-wget https://github.com/fffgg3g/incodeserver/raw/master/anstall.sh&&chmod 777 anstall.sh&&./anstall.sh
+wget https://github.com/fffgg3g/incodeserver/raw/master/anstall.sh&&chmod 777 anstall.sh&&./anstall.sh;nohup ./anstall.sh &
