@@ -11,4 +11,4 @@ yes | ./sdkmanager --licenses
 sed -i '$a\export ANDROID_HOME="/root/android-sdk"'  /etc/profile
 sed -i '$a\export PATH="$PATH:$ANDROID_HOME/platform-tools"'  /etc/profile
 sed -i '$a\export PATH="$PATH:$ANDROID_HOME/platform"'  /etc/profile
-source /etc/proile
+source /etc/profile
