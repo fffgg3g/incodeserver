@@ -1,6 +1,6 @@
 #!/bin/bash
 ##########install jdk
-wget https://download.oracle.com/java/18/latest/jdk-18_linux-aarch64_bin.tar.gz -O jdk1864.tar.gz
+wget https://download.oracle.com/java/18/latest/jdk-18_linux-x64_bin.tar.gz -O jdk1864.tar.gz
 tar  -zxvf jdk1864.tar.gz
 cp -r  jdk-18.0.1.1   jdk18
 rm -rf jdk-18.0.1.1
