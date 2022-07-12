@@ -11,7 +11,7 @@ chmod 777 codestall.sh
 
 
 chmod 777 fcreate.sh 
-./fcreate projectname
+./fcreate.sh projectname
 
 
 
@@ -21,4 +21,4 @@ wget https://github.com/fffgg3g/incodeserver/raw/master/vstall.sh&&chmod 777 vst
 
 
 新建一个项目
-./fcreate projectname
+./fcreate.sh projectname
