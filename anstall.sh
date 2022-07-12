@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 wget https://dl.google.com/android/repository/commandlinetools-linux-8512546_latest.zip -O ancmd.zip
 mkdir /root/android-sdk;mkdir /root/android-sdk/cmdline-tools
 unzip -d /root/android-sdk/cmdline-tools/  ancmd.zip
