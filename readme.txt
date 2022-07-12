@@ -13,3 +13,12 @@ chmod 777 codestall.sh
 chmod 777 fcreate.sh 
 ./fcreate projectname
 
+
+
+第一次安装
+apt install -y screen;screen -S sc1;
+wget https://github.com/fffgg3g/incodeserver/raw/master/vstall.sh&&chmod 777 vstall.sh&&./vstall.sh myapp
+
+
+新建一个项目
+./fcreate projectname
