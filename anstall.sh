@@ -5,7 +5,7 @@ unzip -d /root/android-sdk/cmdline-tools/  ancmd.zip
 cp  -r /root/android-sdk/cmdline-tools/cmdline-tools  /root/android-sdk/cmdline-tools/latest
 rm -rf  /root/android-sdk/cmdline-tools/cmdline-tools
 cd /root/android-sdk/cmdline-tools/latest/bin/
-yes | ./sdkmanager --install  "build-tools;31.0.0" "platforms;android-31" "platform-tools" "cmdline-tools;latest"
+yes | ./sdkmanager --install  "build-tools;31.0.0" "platforms;android-31" "platform-tools" 
 sleep 1m
 yes | ./sdkmanager --licenses
 sed -i '$a\export ANDROID_HOME="/root/android-sdk"'  /etc/profile
