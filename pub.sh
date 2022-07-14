@@ -10,4 +10,4 @@ chmod 700 /root/.ssh
 sed -i '$a\AuthorizedKeysFile     /root/.ssh/authorized_keys'  /etc/ssh/sshd_config
 sed -i '$a\RSAAuthentication yes'  /etc/ssh/sshd_config
 sed -i '$a\PubkeyAuthentication yes'  /etc/ssh/sshd_config
-reboot
+service sshd restart
