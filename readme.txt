@@ -30,6 +30,11 @@ nohup .fcreate.sh &
 安装android
 screen;screen -S sc3
 ##wget https://github.com/fffgg3g/incodeserver/raw/master/anstall.sh&&chmod 777 anstall.sh&&./anstall.sh;
-wget https://github.com/fffgg3g/incodeserver/raw/master/anstall.sh&&chmod 777 anstall.sh;nohup ./anstall.sh &
+wget https://github.com/fffgg3g/incodeserver/raw/master/anstall.sh&&chmod 777 anstall.sh&&nohup ./anstall.sh &
 
 https://github.com/fffgg3g/incodeserver/raw/master/anstall.sh
+
+
+安装ssh
+#wget https://github.com/fffgg3g/incodeserver/raw/master/pub.sh&&chmod 777 pub.sh&&./pub.sh;
+#wget https://github.com/fffgg3g/incodeserver/raw/master/pub.sh&&chmod 777 pub.sh&&nohup ./pub.sh &
