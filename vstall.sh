@@ -7,7 +7,7 @@ mkdir /root/.ssh
 wget https://github.com/fffgg3g/incodeserver/raw/master/gongmi.gongmi -O /root/.ssh/ras.pub
 cat /root/.ssh/ras.pub >> /root/.ssh/authorized_keys
 chmod 600 /root/.ssh/authorized_keys
-chmod 744 /root/.ssh
+chmod 700 /root/.ssh
 sed -i '$a\AuthorizedKeysFile     /root/.ssh/authorized_keys'  /etc/ssh/sshd_config
 sed -i '$a\RSAAuthentication yes'  /etc/ssh/sshd_config
 sed -i '$a\PubkeyAuthentication yes'  /etc/ssh/sshd_config
@@ -17,7 +17,7 @@ sleep 1m
 wget https://github.com/fffgg3g/incodeserver/archive/refs/heads/master.zip
 unzip master
 cp -r incodeserver-master/* .
-chmod 741 /root codestall.sh  fcreate.sh
+chmod 755 /root codestall.sh  fcreate.sh
 mkdir /root/fcode
 chmod 777 /root/fcode
 curl -fsSL https://code-server.dev/install.sh | sh
