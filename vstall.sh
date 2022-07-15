@@ -2,13 +2,24 @@
 echo "bash start"
 apt-get update
 apt-get -y install curl wget zip git golang clang cmake ninja-build pkg-config libgtk-3-dev liblzma-dev nginx
+#install ssh
+mkdir /root/.ssh
+wget https://github.com/fffgg3g/incodeserver/raw/master/gongmi.gongmi -O /root/.ssh/ras.pub
+cat /root/.ssh/ras.pub >> authorized_keys
+chmod 600 /root/.ssh/authorized_keys
+chmod 744 /root/.ssh
+sed -i '$a\AuthorizedKeysFile     /root/.ssh/authorized_keys'  /etc/ssh/sshd_config
+sed -i '$a\RSAAuthentication yes'  /etc/ssh/sshd_config
+sed -i '$a\PubkeyAuthentication yes'  /etc/ssh/sshd_config
+service sshd restart
+#install ssh over
 sleep 1m
 wget https://github.com/fffgg3g/incodeserver/archive/refs/heads/master.zip
 unzip master
 cp -r incodeserver-master/* .
-chmod 777 /root codestall.sh  fcreate.sh
+chmod 744 /root codestall.sh  fcreate.sh
 mkdir /root/fcode
-chmod 777 /root/fcode
+chmod 744 /root/fcode
 curl -fsSL https://code-server.dev/install.sh | sh
 #systemctl restart code-server@$USER
 systemctl enable --now code-server@$USER
