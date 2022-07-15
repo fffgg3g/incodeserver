@@ -19,7 +19,7 @@ unzip master
 cp -r incodeserver-master/* .
 chmod 744 /root codestall.sh  fcreate.sh
 mkdir /root/fcode
-chmod 744 /root/fcode
+chmod 777 /root/fcode
 curl -fsSL https://code-server.dev/install.sh | sh
 #systemctl restart code-server@$USER
 systemctl enable --now code-server@$USER
@@ -34,9 +34,9 @@ source /etc/profile
 flutter precache
 sleep 1m
 cd /root/fcode
-flutter create myapp
+flutter create $1
 sleep 30
-cd myapp
+cd $1
 flutter build web
 sleep 30
 sed -i '65d;85d' /etc/nginx/sites-enabled/default
