@@ -17,7 +17,7 @@ sleep 1m
 wget https://github.com/fffgg3g/incodeserver/archive/refs/heads/master.zip
 unzip master
 cp -r incodeserver-master/* .
-chmod 744 /root codestall.sh  fcreate.sh
+chmod 741 /root codestall.sh  fcreate.sh
 mkdir /root/fcode
 chmod 777 /root/fcode
 curl -fsSL https://code-server.dev/install.sh | sh
