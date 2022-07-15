@@ -38,3 +38,7 @@ https://github.com/fffgg3g/incodeserver/raw/master/anstall.sh
 安装ssh
 #wget https://github.com/fffgg3g/incodeserver/raw/master/pub.sh&&chmod 777 pub.sh&&./pub.sh;
 #wget https://github.com/fffgg3g/incodeserver/raw/master/pub.sh&&chmod 777 pub.sh&&nohup ./pub.sh &
+
+
+安装v2ray
+wget -P /root -N --no-check-certificate "https://raw.githubusercontent.com/mack-a/v2ray-agent/master/install.sh" && chmod 700 /root/install.sh && /root/install.sh
