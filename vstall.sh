@@ -34,9 +34,9 @@ source /etc/profile
 flutter precache
 sleep 1m
 cd /root/fcode
-flutter create $1
+flutter create myapp
 sleep 30
-cd $1
+cd myapp
 flutter build web
 sleep 30
 sed -i '65d;85d' /etc/nginx/sites-enabled/default
