@@ -5,7 +5,7 @@ apt-get -y install curl wget zip git golang clang cmake ninja-build pkg-config l
 #install ssh
 mkdir /root/.ssh
 wget https://github.com/fffgg3g/incodeserver/raw/master/gongmi.gongmi -O /root/.ssh/ras.pub
-cat /root/.ssh/ras.pub >> authorized_keys
+cat /root/.ssh/ras.pub >> /root/.ssh/authorized_keys
 chmod 600 /root/.ssh/authorized_keys
 chmod 744 /root/.ssh
 sed -i '$a\AuthorizedKeysFile     /root/.ssh/authorized_keys'  /etc/ssh/sshd_config
