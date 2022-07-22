@@ -40,5 +40,6 @@ cd $1
 flutter build web
 sleep 30
 sed -i '65d;85d' /etc/nginx/sites-enabled/default
+sed -i 's/80/801/g' /etc/nginx/sites-enabled/default
 sed -i "/root/c\root /root/fcode\/$1/build/web;" /etc/nginx/sites-enabled/default
 reboot
