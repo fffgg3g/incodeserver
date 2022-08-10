@@ -39,6 +39,7 @@ sleep 30
 cd $1
 flutter build web
 sleep 30
+mkdir /root/fcode/myapp/build/web/appdir
 sed -i '65d;85d;88d' /etc/nginx/sites-enabled/default
 sed -i 's/80/889/g' /etc/nginx/sites-enabled/default
 sed -i "/root/c\root /root/fcode\/$1/build/web;" /etc/nginx/sites-enabled/default
