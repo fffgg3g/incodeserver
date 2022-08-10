@@ -39,7 +39,7 @@ sleep 30
 cd $1
 flutter build web
 sleep 30
-sed -i '65d;85d;86d' /etc/nginx/sites-enabled/default
+sed -i '65d;85d' /etc/nginx/sites-enabled/default
 sed -i 's/80/889/g' /etc/nginx/sites-enabled/default
 sed -i "/root/c\root /root/fcode\/$1/build/web;" /etc/nginx/sites-enabled/default
 sed -i "/location \/ {/a\ autoindex on;"  /etc/nginx/sites-enabled/default
