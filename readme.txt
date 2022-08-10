@@ -15,7 +15,7 @@ chmod 777 fcreate.sh
 
 
 
-第一次安装
+第一次安装（包含ssh,创建了myapp）
 apt install -y screen;screen -S sc1;
 ##wget https://github.com/fffgg3g/incodeserver/raw/master/vstall.sh&&chmod 777 vstall.sh&& ./vstall.sh myapp 
 wget https://github.com/fffgg3g/incodeserver/raw/master/vstall.sh&&chmod 777 vstall.sh&&nohup ./vstall.sh myapp &
@@ -27,7 +27,7 @@ screen;screen -S sc2
 nohup .fcreate.sh &
 
 
-安装android
+安装android(安装android开发环境)
 screen;screen -S sc3
 ##wget https://github.com/fffgg3g/incodeserver/raw/master/anstall.sh&&chmod 777 anstall.sh&&./anstall.sh;
 wget https://github.com/fffgg3g/incodeserver/raw/master/anstall.sh&&chmod 777 anstall.sh&&nohup ./anstall.sh &
