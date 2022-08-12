@@ -7,7 +7,7 @@ sleep 30
 cd $1
 flutter build web
 sleep 30
-cp /root/appdir.sh /root/fcode/$1
+echo "\cp  /root/fcode/$1/build/app/outputs/apk/release/*.apk /root/fcode/$1/build/web/appdir" >appdir.sh
 chmod 777 /root/fcode/$1/appdir.sh
 sed -i "/root/c\root /root/fcode\/$1/build/web;" /etc/nginx/sites-enabled/default
 reboot
