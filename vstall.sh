@@ -43,7 +43,7 @@ mkdir /root/fcode/myapp/build/web/appdir
 sed -i '65d;85d;88d' /etc/nginx/sites-enabled/default
 sed -i 's/80/889/g' /etc/nginx/sites-enabled/default
 sed -i "/root/c\root /root/fcode\/$1/build/web;" /etc/nginx/sites-enabled/default
-sed -i "/location \/ {/a\ autoindex_localtime on;"  /etc/nginx/sites-enabled/default
-sed -i "/location \/ {/a\ autoindex_exact_size off;"  /etc/nginx/sites-enabled/default
-sed -i "/location \/ {/a\ autoindex on;"  /etc/nginx/sites-enabled/default
+sed -i "/location \/ {/a\autoindex_localtime on;"  /etc/nginx/sites-enabled/default
+sed -i "/location \/ {/a\autoindex_exact_size off;"  /etc/nginx/sites-enabled/default
+sed -i "/location \/ {/a\autoindex on;"  /etc/nginx/sites-enabled/default
 reboot
