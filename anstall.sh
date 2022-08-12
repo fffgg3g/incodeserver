@@ -4,7 +4,7 @@ wget https://download.oracle.com/java/18/latest/jdk-18_linux-x64_bin.tar.gz -O j
 tar  -zxvf jdk1864.tar.gz
 cp -r  jdk-18*   jdk18
 rm -rf jdk-18*
-echo "\cp /root/fcode/myapp/build/app/outputs/apk/release/*.apk /root/fcode/myapp/build/web/appdir" >appdir.sh
+echo "\cp /root/fcode/myapp/build/app/outputs/apk/release/*.apk /root/fcode/myapp/build/web/appdir" >/root/fcode/myapp/appdir.sh
 chmod 777 /root/fcode/myapp/appdir.sh
 sed -i '$a\export JAVA_HOME="/root/jdk18"'  /etc/profile
 sed -i '$a\export PATH="$PATH:$JAVA_HOME/bin"'  /etc/profile
