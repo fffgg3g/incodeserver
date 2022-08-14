@@ -6,8 +6,8 @@ cp -r  jdk-18*   jdk18
 rm -rf jdk-18*
 #####set apk dir
 ###mkdir root/fcode/myapp/build/web/vv  first to install
-echo "\cp /root/fcode/myapp/build/app/outputs/apk/release/*.apk /root/fcode/myapp/build/web/vv" >/root/fcode/myapp/appto.sh
-chmod 777 /root/fcode/myapp/appto.sh
+echo "\cp /root/fcode/myapp/build/app/outputs/apk/release/*.apk /root/fcode/myapp/build/web/vv" >/usr/local/bin/appto
+chmod 777 /usr/local/bin/appto
 ####
 sed -i '$a\export JAVA_HOME="/root/jdk18"'  /etc/profile
 sed -i '$a\export PATH="$PATH:$JAVA_HOME/bin"'  /etc/profile
