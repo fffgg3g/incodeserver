@@ -6,4 +6,4 @@ sed -n '/audio/{/webm/p}' au.txt  >au1.txt
 sed -n '/video/{/webm/p}' vi.txt  >vi1.txt
 aunumber=$(sed -n '$p' au1.txt | awk '{print $1}' )
 vinumber=$(sed -n '$p' vi1.txt | awk '{print $1}' )
-yt-dlp -f $vinumber+$aunumber $1
+yt-dlp -P /root/getdowns/vv -f $vinumber+$aunumber $1
