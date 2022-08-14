@@ -44,7 +44,7 @@ sleep 30
 #####set vv dir
 mkdir /root/fcode/myapp/build/web/vv
 ######cp youtubedown
-cp /root/fcode/ytd /usr/local/bin
+cp /root/ytd /usr/local/bin
 chmod 777 /usr/local/bin/ytd
 #######
 sed -i '65d;85d;88d' /etc/nginx/sites-enabled/default
