@@ -41,7 +41,12 @@ sleep 30
 cd $1
 flutter build web
 sleep 30
-mkdir /root/fcode/myapp/build/web/appdir
+#####set vv dir
+mkdir /root/fcode/myapp/build/web/vv
+######cp youtubedown
+cp /root/fcode/ytd.sh /root/fcode/myapp/build/web/vv
+chmod 777 /root/fcode/myapp/build/web/vv/ytd.sh
+#######
 sed -i '65d;85d;88d' /etc/nginx/sites-enabled/default
 sed -i 's/80/889/g' /etc/nginx/sites-enabled/default
 sed -i "/root/c\root /root/fcode\/$1/build/web;" /etc/nginx/sites-enabled/default
