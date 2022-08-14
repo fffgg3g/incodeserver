@@ -44,5 +44,12 @@ wget https://github.com/fffgg3g/incodeserver/raw/master/pub.sh&&chmod 777 pub.sh
 wget -P /root -N --no-check-certificate "https://raw.githubusercontent.com/mack-a/v2ray-agent/master/install.sh" && chmod 700 /root/install.sh && /root/install.sh
 
 安装v2ray ssh
-
 wget https://github.com/fffgg3g/incodeserver/raw/master/pub.sh&&chmod 777 pub.sh&&./pub.sh&&wget -P /root -N --no-check-certificate "https://raw.githubusercontent.com/mack-a/v2ray-agent/master/install.sh" && chmod 700 /root/install.sh && /root/install.sh
+
+vps测试
+基本测试不跑分  wget -qO- bench.sh | bash
+gbk跑分        curl -sL yabs.sh | bash
+综合测试      wget -qO- https://raw.githubusercontent.com/fffgg3g/incodeserver/master/benchsum.sh | bash
+回城路由        wget -qO- git.io/besttrace | bash
+三网测速        bash <(curl -Lso- https://git.io/superspeed.sh)    
+
