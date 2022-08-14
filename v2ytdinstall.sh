@@ -4,6 +4,7 @@ wget https://github.com/fffgg3g/incodeserver/raw/master/nginx.conf
 systemctl stop nginx
 \cp nginx.conf /etc/nginx
 mkdir getdowns
+chmod 755 -R /root
 chmod 755 -R /root/getdowns
 mkdir getdowns/vv
 wget -P /root/getdowns/vv https://raw.githubusercontent.com/fffgg3g/incodeserver/master/ytd.sh
