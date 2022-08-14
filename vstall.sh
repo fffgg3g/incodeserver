@@ -1,7 +1,9 @@
 #!/bin/bash
 echo "bash start"
 apt-get update
-apt-get -y install curl wget zip git golang clang cmake ninja-build pkg-config libgtk-3-dev liblzma-dev nginx
+apt-get -y install curl wget zip git golang clang cmake ninja-build pkg-config libgtk-3-dev liblzma-dev nginx python3 python3-pip  ffmpeg
+pip install yt-dlp
+pip install -U yt-dlp
 #install ssh
 mkdir /root/.ssh
 wget https://github.com/fffgg3g/incodeserver/archive/refs/heads/master.zip
