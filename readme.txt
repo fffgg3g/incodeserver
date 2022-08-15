@@ -36,8 +36,8 @@ https://github.com/fffgg3g/incodeserver/raw/master/anstall.sh
 
 
 安装ssh
-#wget https://github.com/fffgg3g/incodeserver/raw/master/pub.sh&&chmod 777 pub.sh&&./pub.sh;
-wget https://github.com/fffgg3g/incodeserver/raw/master/pub.sh&&chmod 777 pub.sh&&nohup ./pub.sh &
+#wget https://github.com/fffgg3g/incodeserver/raw/master/pub.sh&&chmod 777 inssh.sh&&./inssh.sh;
+wget https://github.com/fffgg3g/incodeserver/raw/master/pub.sh&&chmod 777 inssh.sh&&nohup ./inssh.sh &
 
 
 安装v2ray
