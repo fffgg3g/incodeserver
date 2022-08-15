@@ -38,8 +38,8 @@ https://github.com/fffgg3g/incodeserver/raw/master/anstall.sh
 #####################################v2安装#####################################
 
 安装ssh
-#wget https://github.com/fffgg3g/incodeserver/raw/master/pub.sh&&chmod 777 inssh.sh&&./inssh.sh;
-wget https://github.com/fffgg3g/incodeserver/raw/master/pub.sh&&chmod 777 inssh.sh&&nohup ./inssh.sh &
+#wget https://github.com/fffgg3g/incodeserver/raw/master/inssh.sh&&chmod 777 inssh.sh&&./inssh.sh;
+wget https://github.com/fffgg3g/incodeserver/raw/master/inssh.sh&&chmod 777 inssh.sh&&nohup ./inssh.sh &
 
 
 安装v2ray
