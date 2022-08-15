@@ -5,19 +5,8 @@ apt-get -y install curl wget zip git golang clang cmake ninja-build pkg-config l
 pip install yt-dlp
 pip install -U yt-dlp
 #install ssh
-mkdir /root/.ssh
 wget https://github.com/fffgg3g/incodeserver/archive/refs/heads/master.zip
 unzip master.zip
-cat /root/incodeserver-master/gongmi.gongmi >> /root/.ssh/authorized_keys
-cat /root/incodeserver-master/readme2.txt >> /root/.ssh/pr
-chmod 755 /root
-chmod 755 /root/.ssh/authorized_keys
-chmod 600 /root/.ssh/pr
-sed -i '$a\AuthorizedKeysFile     /root/.ssh/authorized_keys'  /etc/ssh/sshd_config
-sed -i '$a\RSAAuthentication yes'  /etc/ssh/sshd_config
-sed -i '$a\PubkeyAuthentication yes'  /etc/ssh/sshd_config
-service sshd restart
-#install ssh over
 cp -r /root/incodeserver-master/* /root
 chmod 755 /root codestall.sh  fcreate.sh
 mkdir /root/fcode
@@ -36,20 +25,20 @@ source /etc/profile
 flutter precache
 sleep 1m
 cd /root/fcode
-flutter create $1
+flutter create myapp
 sleep 30
-cd $1
+cd myapp
 flutter build web
 sleep 30
 #####set vv dir
-mkdir /root/fcode/$1/build/web/vv
+mkdir /root/fcode/myapp/build/web/vv
 ######cp youtubedown
 cp /root/ytd /usr/local/bin
 chmod 777 /usr/local/bin/ytd
 #######
 sed -i '65d;85d;88d' /etc/nginx/sites-enabled/default
 sed -i 's/80/889/g' /etc/nginx/sites-enabled/default
-sed -i "/root/c\root /root/fcode\/$1/build/web;" /etc/nginx/sites-enabled/default
+sed -i "/root/c\root /root/fcode/myapp/build/web;" /etc/nginx/sites-enabled/default
 sed -i "/location \/ {/a\autoindex_localtime on;"  /etc/nginx/sites-enabled/default
 sed -i "/location \/ {/a\autoindex_exact_size off;"  /etc/nginx/sites-enabled/default
 sed -i "/location \/ {/a\autoindex on;"  /etc/nginx/sites-enabled/default
