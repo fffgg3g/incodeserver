@@ -8,7 +8,7 @@ pip install -U yt-dlp
 wget https://github.com/fffgg3g/incodeserver/archive/refs/heads/master.zip
 unzip master.zip
 cp -r /root/incodeserver-master/* /root
-chmod 755 /root codestall.sh  fcreate.sh
+chmod 755 /root codestall.sh anstall fcreate.sh
 mkdir /root/fcode
 chmod 777 /root/fcode
 curl -fsSL https://code-server.dev/install.sh | sh
