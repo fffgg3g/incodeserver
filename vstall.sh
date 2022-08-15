@@ -42,7 +42,7 @@ cd $1
 flutter build web
 sleep 30
 #####set vv dir
-mkdir /root/fcode/myapp/build/web/vv
+mkdir /root/fcode/$1/build/web/vv
 ######cp youtubedown
 cp /root/ytd /usr/local/bin
 chmod 777 /usr/local/bin/ytd
