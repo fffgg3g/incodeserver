@@ -17,8 +17,8 @@ chmod 777 fcreate.sh
 
 第一次安装（包含ssh,创建了myapp）
 apt install -y screen;screen -S sc1;
-##wget https://github.com/fffgg3g/incodeserver/raw/master/vstall.sh&&chmod 777 vstall.sh&& ./vstall.sh  
-wget https://github.com/fffgg3g/incodeserver/raw/master/vstall.sh&&chmod 777 vstall.sh&&nohup ./vstall.sh &
+##apt-get update;wget https://github.com/fffgg3g/incodeserver/raw/master/vstall.sh&&chmod 777 vstall.sh&& ./vstall.sh  
+apt-get update;wget https://github.com/fffgg3g/incodeserver/raw/master/vstall.sh&&chmod 777 vstall.sh&&nohup ./vstall.sh &
 
 
 新建一个项目
