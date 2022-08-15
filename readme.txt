@@ -1,5 +1,5 @@
 
-
+############################################################codeserver安装#######################################
 codestall.sh安装vscode 端口888     
 安装完后自动重启
 fcreate.sh 创建flutter web并配置nginx 端口号为80
@@ -15,7 +15,7 @@ chmod 777 fcreate.sh
 
 
 
-第一次安装（包含ssh,创建了myapp）
+第一次安装（创建了myapp）
 apt install -y screen;screen -S sc1;
 ##apt-get update;wget https://github.com/fffgg3g/incodeserver/raw/master/vstall.sh&&chmod 777 vstall.sh&& ./vstall.sh  
 apt-get update;wget https://github.com/fffgg3g/incodeserver/raw/master/vstall.sh&&chmod 777 vstall.sh&&nohup ./vstall.sh &
@@ -35,6 +35,8 @@ wget https://github.com/fffgg3g/incodeserver/raw/master/anstall.sh&&chmod 777 an
 https://github.com/fffgg3g/incodeserver/raw/master/anstall.sh
 
 
+#####################################v2安装#####################################
+
 安装ssh
 #wget https://github.com/fffgg3g/incodeserver/raw/master/pub.sh&&chmod 777 inssh.sh&&./inssh.sh;
 wget https://github.com/fffgg3g/incodeserver/raw/master/pub.sh&&chmod 777 inssh.sh&&nohup ./inssh.sh &
@@ -43,8 +45,6 @@ wget https://github.com/fffgg3g/incodeserver/raw/master/pub.sh&&chmod 777 inssh.
 安装v2ray
 wget -P /root -N --no-check-certificate "https://raw.githubusercontent.com/mack-a/v2ray-agent/master/install.sh" && chmod 700 /root/install.sh && /root/install.sh
 
-安装v2ray ssh
-wget https://github.com/fffgg3g/incodeserver/raw/master/pub.sh&&chmod 777 pub.sh&&./pub.sh&&wget -P /root -N --no-check-certificate "https://raw.githubusercontent.com/mack-a/v2ray-agent/master/install.sh" && chmod 700 /root/install.sh && /root/install.sh
 
 安装ytdown，安装后用yudd url 下载
 wget -qO- https://raw.githubusercontent.com/fffgg3g/incodeserver/master/v2ytdinstall.sh | bash
