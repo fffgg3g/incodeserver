@@ -15,7 +15,7 @@ chmod 777 fcreate.sh
 
 
 
-第一次安装（创建了myapp，安装了youtube ytd）
+第一次安装（创建了myapp，安装了youtube ytd,只能在指定项目下vv）
 apt install -y screen;screen -S sc1;
 ##apt-get update;wget https://github.com/fffgg3g/incodeserver/raw/master/vstall.sh&&chmod 777 vstall.sh&& ./vstall.sh  
 apt-get update;wget https://github.com/fffgg3g/incodeserver/raw/master/vstall.sh&&chmod 777 vstall.sh&&nohup ./vstall.sh &
