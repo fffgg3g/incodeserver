@@ -15,7 +15,7 @@ chmod 777 fcreate.sh
 
 
 
-第一次安装（创建了myapp）
+第一次安装（创建了myapp，安装了youtube ytd）
 apt install -y screen;screen -S sc1;
 ##apt-get update;wget https://github.com/fffgg3g/incodeserver/raw/master/vstall.sh&&chmod 777 vstall.sh&& ./vstall.sh  
 apt-get update;wget https://github.com/fffgg3g/incodeserver/raw/master/vstall.sh&&chmod 777 vstall.sh&&nohup ./vstall.sh &
@@ -46,7 +46,7 @@ wget https://github.com/fffgg3g/incodeserver/raw/master/pub.sh&&chmod 777 inssh.
 wget -P /root -N --no-check-certificate "https://raw.githubusercontent.com/mack-a/v2ray-agent/master/install.sh" && chmod 700 /root/install.sh && /root/install.sh
 
 
-安装ytdown，安装后用yudd url 下载
+安装ytdd，安装后用yudd url 下载
 wget -qO- https://raw.githubusercontent.com/fffgg3g/incodeserver/master/v2ytdinstall.sh | bash
 
 
