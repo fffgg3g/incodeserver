@@ -58,3 +58,4 @@ gbk跑分        curl -sL yabs.sh | bash -s -- -i
 回城路由        wget -qO- git.io/besttrace | bash
 三网测速        bash <(curl -Lso- https://git.io/superspeed.sh)    
 
+wget -O box.sh https://raw.githubusercontent.com/BlueSkyXN/SKY-BOX/main/box.sh && chmod +x box.sh && clear && ./box.sh 
