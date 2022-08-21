@@ -53,7 +53,7 @@ wget -qO- https://raw.githubusercontent.com/fffgg3g/incodeserver/master/v2ytdins
 
 vps测试
 基本测试不跑分  wget -qO- bench.sh | bash
-gbk跑分        curl -sL yabs.sh | bash
+gbk跑分        curl -sL yabs.sh | bash -s -- -i
 综合测试      wget -qO- https://raw.githubusercontent.com/fffgg3g/incodeserver/master/benchsum.sh | bash
 回城路由        wget -qO- git.io/besttrace | bash
 三网测速        bash <(curl -Lso- https://git.io/superspeed.sh)    
